@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "https://technova.vercel.app",
+    origin: "https://technova-frontend-omega.vercel.app/",
   }),
 );
 app.use(express.json());
