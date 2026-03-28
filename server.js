@@ -10,7 +10,11 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://technova.vercel.app",
+  }),
+);
 app.use(express.json());
 
 // Routes
