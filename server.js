@@ -17,6 +17,10 @@ app.use(
 );
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("API Running");
+});
+
 // Routes
 app.use("/api", contactRoutes);
 
